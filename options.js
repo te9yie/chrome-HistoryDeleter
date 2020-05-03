@@ -1,9 +1,9 @@
 function save_options() {
-    var patterns = document.getElementById('patterns').value;
+    let patterns = document.getElementById('patterns').value;
     chrome.storage.local.set({
         patterns: patterns
     }, function() {
-        var status = document.getElementById('status');
+        let status = document.getElementById('status');
         status.textContent = 'Options saved.';
         setTimeout(function() {
             status.textContent = '';
