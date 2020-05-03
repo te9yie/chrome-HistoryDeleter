@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History Deleter Options</title>
+        <style type="text/css">
+        <!--
+        body {
+            width: 40em;
+        }
+        #options,
+        #patterns,
+        .input {
+            width: 100%;
+        }
+        -->
+        </style>
+    </head>
+    <body>
+        <table id="options">
+            <tr>
+                <td>
+                    Patterns:
+                </td>
+                <td class="input">
+                    <textarea id="patterns" placeholder="https?://example.com/*"></textarea>
+                </td>
+            </tr>
+        </table>
+        <button id="save">Save</button>
+        <div id="status"></div>
+        <script src="options.js"></script>
+    </body>
+</html>
